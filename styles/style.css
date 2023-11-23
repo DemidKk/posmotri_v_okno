@@ -129,6 +129,9 @@ ol {
   background-color: #fff;
 }
 
+.result {
+  margin-top: 78px;
+}
 .result__video-container {
   position: relative;
   width: 711px;
