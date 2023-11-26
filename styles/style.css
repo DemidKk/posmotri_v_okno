@@ -46,6 +46,7 @@ ol {
   display: flex;
   gap: 30px;
   padding: 133px 30px;
+  align-items: flex-end;
 }
 
 .visually-hidden {
@@ -153,6 +154,7 @@ ol {
 .result {
   margin-top: 78px;
 }
+
 .result__video-container {
   position: relative;
   width: 711px;
@@ -175,7 +177,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
+  gap: 18px;
   width: 399px;
   height: 534px;
 } 
@@ -202,7 +204,7 @@ ol {
 }
 
 .content__list-item{
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .content__card-link {
