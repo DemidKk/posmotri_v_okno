@@ -103,10 +103,12 @@ ol {
 
 .search-form__textfield:focus {
   outline: transparent;
-}
+} 
 
 .search-form__label:has(:focus-visible) {
+  outline: 1px #fff solid;
   border: 1px #fff solid;
+  outline-offset:2px;
 }
 .search-form__checkbox-list {
   display: flex;
@@ -154,12 +156,17 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
+  height: 386px;
   margin-bottom: 16px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .result__video {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 711px;
+  height: 386px;
 }
 
 /* БЛОК СПРАВА С ВАРИАНТАМИ ВИДЕО */
@@ -171,7 +178,7 @@ ol {
   gap: 26px;
   width: 399px;
   height: 534px;
-}
+} 
 
 .title {
   font-family: "Oswald", sans-serif;
@@ -190,7 +197,7 @@ ol {
   position: relative;
   flex-direction: column;
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
   overflow-x:auto;
 }
 
@@ -216,13 +223,22 @@ ol {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 199px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 16.2px;
-}
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+  
 
 .content__video-card-thumbnail {
   object-fit: cover;
@@ -251,6 +267,11 @@ ol {
   color: #fff;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -270,6 +291,7 @@ ol {
   background-color: transparent;
   border: 1px solid #fff;
   cursor: pointer;
+  
 }
 
 .button:hover {
@@ -278,10 +300,16 @@ ol {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus {
+  outline: transparent;
+}
+
+.button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset:2px;
   text-decoration: none;
 }
 
