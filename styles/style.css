@@ -108,7 +108,6 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px #fff solid;
-  border: 1px #fff solid;
   outline-offset:2px;
 }
 .search-form__checkbox-list {
@@ -124,6 +123,7 @@ ol {
 
 .search-form__label-text:active {
   text-decoration: none;
+  outline: transparent;
 }
 
 .search-form__label:hover {
@@ -177,7 +177,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 22px;
   width: 399px;
   height: 534px;
 } 
@@ -204,7 +204,7 @@ ol {
 }
 
 .content__list-item{
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 }
 
 .content__card-link {
@@ -229,6 +229,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 100%;
 }
 
 .content__video-card-description {
