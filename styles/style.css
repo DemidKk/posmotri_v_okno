@@ -87,8 +87,8 @@ ol {
   width: 225px;
   border-top: 1px #fff solid;
   border-bottom: 1px #fff solid;
-  border-left: none;
-  border-right: none;
+  border-left: transparent;
+  border-right: transparent;
   cursor: pointer;
   appearance: none;
 }
@@ -204,7 +204,7 @@ ol {
 }
 
 .content__list-item{
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 }
 
 .content__card-link {
